@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog-Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div id="Outercont">
+        <img id="logo" src="3.jpeg">
+        <label id="reg">Not have an account:</label>
+        <a href="index.html"><p id="register">Register Here</p></a>
+        <div id="innercont">
+            <h1 id="heading">Login</h1>
+            <form>
+                <div class="inputdiv">
+                    <input class="inputtags" placeholder="Enter The Email">
+                </div>
+                <div class="inputdiv" id="passdiv">
+                    <input type="password" class="inputtags" placeholder="Enter The Password">
+                    <img id="passvis" src="openedeye.png" onmousedown="passviss()" onmouseup="passhid()">
+                </div>
+                <p id="status"></p>
+                <input type="button" value="login" id="loginbutton" onclick="passvalid()" onmousedown="bigbutton()" onmouseup="smallbutton()" >
+            </form>
+        </div>
+    </div>
+</body>
+</html>
